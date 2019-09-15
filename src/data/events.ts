@@ -7,7 +7,7 @@ export default [
             to: "2019-09-15T23:59:59+0200"
         },
         desc: "W tym tygodniu w bielsku rządzi informatyka! Czeka na Ciebie mnóstwo atrakcji związanych z lokalnymi firmami informatycznymi",
-        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/bbdays/cover.png"
+        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/bbdays/logo.png"
     },
     {
         name: "zadymka-jazzowa",
@@ -17,7 +17,7 @@ export default [
             to: "2020-02-14T23:59:59+0200"
         },
         desc: "Jazz opanował Bielsko, czeka na Ciebie mnóstwo muzycznych atrakcji",
-        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/zadymka-jazzowa/cover.png"
+        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/zadymka-jazzowa/logo.png"
     },
     {
         name: "aktywny-wrzesien",
@@ -27,7 +27,7 @@ export default [
             to: "2019-09-30T23:59:59+0200"
         },
         desc: "Jesień w mieście jest piękna, doświadcz jej w z innymi mieszkańcami korzystając z przygotowanych dla Ciebie atrakcji",
-        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/aktywny-wrzesien/cover.png"
+        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/aktywny-wrzesien/logo.png"
     },
     {
         "name":"szlakiem-murali",
@@ -37,6 +37,6 @@ export default [
             "to":"2019-06-10T23:59:59+0200"
         },
         "desc":"Czy wiedziałeś że w Bielsku-Białej jest aż 50 murali? W tym wyzwaniu towarzyszyć będą nam największe z nich. By uczcić to wydarzenie dogadaliśmy się z pobliskimi kawiarniami i dla każdego zamówienia otrzymacie darmowe ciasto!",
-        "coverImage":"http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/szlakiem-murali/cover.png"
+        "coverImage":"http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/szlakiem-murali/logo.png"
     }
 ];
