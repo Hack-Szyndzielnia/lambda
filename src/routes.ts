@@ -1,4 +1,9 @@
 import Events from "./data/events";
+import bbdays4it from "./data/bbdays4it";
+
+const EventData = {
+    bbdays4it
+};
 
 export default {
     "GET": {
@@ -9,6 +14,9 @@ export default {
         },
         "/events": () => {
             return Events;
+        },
+        "/events/bbdays4it": () => {
+            return EventData.bbdays4it;
         }
     },
     "POST": {
