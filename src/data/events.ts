@@ -28,5 +28,15 @@ export default [
         },
         desc: "Jesień w mieście jest piękna, doświadcz jej w z innymi mieszkańcami korzystając z przygotowanych dla Ciebie atrakcji",
         coverImage: "aktywny-wrzesien/cover.png"
+    },
+    {
+        "name":"szlakiem-murali",
+        "title":"Szlakiem Bielskich Murali",
+        "duration":{
+            "from":"2019-06-01T00:00:00+0200",
+            "to":"2019-06-10T23:59:59+0200"
+        },
+        "desc":"Czy wiedziałeś że w Bielsku-Białej jest aż 50 murali? W tym wyzwaniu towarzyszyć będą nam największe z nich. By uczcić to wydarzenie dogadaliśmy się z pobliskimi kawiarniami i dla każdego zamówienia otrzymacie darmowe ciasto!",
+        "coverImage":"szlakiem-murali/cover.png"
     }
 ];
