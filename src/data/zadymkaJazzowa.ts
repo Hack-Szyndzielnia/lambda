@@ -7,7 +7,7 @@ export default {
             to: "2020-02-14T23:59:59+0200"
         },
         desc: "Jazz opanował Bielsko, czeka na Ciebie mnóstwo muzycznych atrakcji",
-        coverImage: "zadymka-jazzowa/cover.png"
+        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/zadymka-jazzowa/cover.png"
     },
     steps: [
         {

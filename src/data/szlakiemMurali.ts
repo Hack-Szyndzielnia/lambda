@@ -7,7 +7,7 @@ export default {
             "to":"2019-06-10T23:59:59+0200"
         },
         "desc":"Czy wiedziałeś że w Bielsku-Białej jest aż 50 murali? W tym wyzwaniu towarzyszyć będą nam największe z nich. By uczcić to wydarzenie dogadaliśmy się z pobliskimi kawiarniami i dla każdego zamówienia otrzymacie darmowe ciasto!",
-        "coverImage":"szlakiem-murali/cover.png"
+        "coverImage":"http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/szlakiem-murali/cover.png"
     },
     steps: [
         {

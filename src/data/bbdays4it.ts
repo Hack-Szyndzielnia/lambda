@@ -7,7 +7,7 @@ export default {
             to: "2019-09-15T23:59:59+0200"
         },
         desc: "W tym tygodniu w bielsku rządzi informatyka! Czeka na Ciebie mnóstwo atrakcji związanych z lokalnymi firmami informatycznymi",
-        coverImage: "bbdays4it/cover.png"
+        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/bbdays/logo.png"
     },
     steps: [
         {

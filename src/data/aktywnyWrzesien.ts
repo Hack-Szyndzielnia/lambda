@@ -7,7 +7,7 @@ export default {
             to: "2019-09-30T23:59:59+0200"
         },
         desc: "Jesień w mieście jest piękna, doświadcz jej w z innymi mieszkańcami korzystając z przygotowanych dla Ciebie atrakcji",
-        coverImage: "aktywny-wrzesien/cover.png"
+        coverImage: "http://images-bbdays4it-hack.s3-website.eu-central-1.amazonaws.com/aktywny-wrzesien/cover.png"
     },
     steps: [
         {
