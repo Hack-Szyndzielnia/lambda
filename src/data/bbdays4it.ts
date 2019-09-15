@@ -11,7 +11,7 @@ export default {
     },
     steps: [
         {
-            name: "Wpadnij do Pintey Bowes",
+            name: "Wpadnij do Pitney Bowes",
             desc: "Pitney Bowes, parter imprezy czeka na Ciebie w piątek. Wpadnij do firmy i zeskanuj kod QR aby wykonać to zadanie",
             local: {
                 lat: 49.8193571,
