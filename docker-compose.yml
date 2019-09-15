@@ -1,16 +1,8 @@
 version: '3'
 
 services:
-  nodejs:
-    image: node:8.10-alpine
-    environment:
-      CCBS_QA_CLIENT_ID: yPvmvBGok3w6iorFzalZxi23e22ZFGrR
-      CCBS_QA_CLIENT_SECRET: bZOHuEhV184FOY77
-      CCBS_PROD_CLIENT_ID: nJAGexrJJRCR1hWfjV40qhB1vIYCZfrD
-      CCBS_PROD_CLIENT_SECRET: 97P8e2DK2AaIACYG
-      DYNAMO_HOST: http://dynamodb:8000
-      DYNAMO_KEY_ID: TEST
-      DYNAMO_KEY_SECRET: TEST
+  app:
+    image: node:10-alpine
     ports:
       - 9080:80
       - 5858:5858
@@ -18,33 +10,3 @@ services:
       - ./:/app
     working_dir: /app
     command: npm run debug
-    depends_on:
-      - dynamodb
-
-  dynamodb:
-    image: amazon/dynamodb-local
-    ports:
-      - 8000:8000
-
-  awsapi:
-    environment:
-      AWS_DEFAULT_REGION: us-east-1
-      AWS_ACCESS_KEY_ID: test
-      AWS_SECRET_ACCESS_KEY: test
-    image: eoconverse/awscli
-
-#cloudCommerce:
-#  uri:
-#    login: https://login-stg.saase2e.pitneycloud.com/eov
-#    oktaApi: https://pitneybowes.oktapreview.com
-#    sassApi: https://api-qa.pitneybowes.com
-#    loginRedirect: http://eov.dev/admin/auth/oauth2/callback
-#  okta:
-#    authServerId: aus8zl82cdIGhGxGr0h7
-#    client:
-#      id: jMHqyqHb9et2fMZMvTBl
-#      secret: HXrsmVxu2YD0WpEJutknz2MuK1cwWl0xFoca96QV
-#  sass:
-#    client:
-#      id: VvSbmWPtdwFVqGKcmdqnrEd1aGzDKtya
-#      secret: i2GKLdj0t24P6dGU

@@ -7,5 +7,5 @@
   "ignore": [
     "tests/**/*.spec.ts"
   ],
-  "exec": "node -r ts-node/register --inspect=0.0.0.0:5858 ./server.ts"
+  "exec": "node -r ts-node/register --inspect=0.0.0.0:5858 ./src/server.ts"
 }

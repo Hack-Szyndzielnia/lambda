@@ -1,8 +1,6 @@
 import * as express from "express";
 import * as bodyParser from "body-parser";
-// import { tokenService } from "./services";
 import * as Lambda from "./lambda";
-import * as services from "./services";
 
 class Server {
 	private app: express.Application;
@@ -29,13 +27,6 @@ class Server {
 		this.app = express();
 		this.config();
 		this.routing();
-		this.createTables();
-	}
-
-	private async createTables() {
-		await services.dynamoStoreQa.createTable();
-		await services.dynamoStoreProd.createTable();
-		await services.authorizedUsers.createTable();
 	}
 
 	/**
@@ -51,9 +42,6 @@ class Server {
 		}));
 		this.app.use(bodyParser.json());
 		this.app.listen(port, () => console.log(`Server is listening on port: ${port}`));
-
-		services.dynamoStoreQa.createTable();
-		services.authorizedUsers.createTable();
 	}
 
 	routing() {
