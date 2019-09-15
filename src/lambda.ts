@@ -17,7 +17,12 @@ export const handler = async (
     context: any = {},
     callback: any = () => {}
 ): Promise<any> => {
-    let { path, httpMethod, queryStringParameters, body } = event;
+    let { path, httpMethod, queryStringParameters, body, resource } = event;
+    resource = resource.replace("{proxy+}", "");
+    path = path.replace(resource, "");
+    if (path.charAt(0) !== "/") {
+        path = "/" + path;
+    }
 
     let response = {
         body: {},
@@ -33,7 +38,8 @@ export const handler = async (
             response.statusCode = 200;
         } else {
             response.body = JSON.stringify({
-                message: `Invalid HTTP Method: ${httpMethod}`
+                message: `Invalid HTTP Method: ${httpMethod}`,
+                path: path
             });
         }
     } catch (error) {
